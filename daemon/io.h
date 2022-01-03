@@ -25,7 +25,7 @@
 #include <net/if.h>
 #include <limits.h>
 
-#ifdef __APPLE__
+#if defined(__APPLE__) || defined(__ANDROID__)
 #include <net/ethernet.h>
 #else
 #include <netinet/ether.h>
